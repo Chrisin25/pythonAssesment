@@ -1,5 +1,7 @@
 import json
 
+from falcon import HTTPBadRequest
+
 from repositories.user_repository import UserRepository
 
 
@@ -8,7 +10,8 @@ class UserService:
         self.repository=UserRepository()
     def add_new_user(self,new_data):
         print(new_data)
-
+        if self.repository.view_user({"email":new_data.get("email")}):
+            raise HTTPBadRequest(description="User with this mail id already exist")
         with open("user_data.json","r") as json_file:
             data=json.load(json_file)
         print(data)
