@@ -37,5 +37,6 @@ class TestUserService(unittest.TestCase):
 
         self.assertEqual(result, ["Test User"])
 
+
 if __name__ == '__main__':
     unittest.main()

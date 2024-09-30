@@ -29,16 +29,13 @@ class UserResource:
 
     def on_get(self,req,resp):
 
-        try:
-            email = req.media
+        email = req.media
 
-            response = self.service.view_user_by_email(email)
+        response = self.service.view_user_by_email(email)
 
-            if not response:
-                raise HTTPNotFound(description="No user found with this email")
-            else:
-               resp.status = falcon.HTTP_200
-               resp.text = json.dumps(response)
+        if not response:
+            raise HTTPNotFound(description="No user found with this email")
+        else:
+           resp.status = falcon.HTTP_200
+           resp.text = json.dumps(response)
 
-        except HTTPUnsupportedMediaType:
-            raise HTTPBadRequest(description="specify email of user")
