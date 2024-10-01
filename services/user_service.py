@@ -11,6 +11,7 @@ class UserService:
 
     def add_new_user(self,new_data):
         user = User.from_dict(new_data)
+
         if self.repository.get_user({"email":new_data.get("email")}):
            raise falcon.HTTPBadRequest(description="User with this mail id already exist")
 
@@ -25,9 +26,9 @@ class UserService:
         self.repository.add_new_user(user.to_dict())
 
     def get_user_by_email(self,email):
-        user_dict={}
+
         user =self.repository.get_user(email)
-        #print(user)
+        user_dict={}
         if user:
             user_dict["name"]=user.get("name")
             user_dict["email"]=user.get("email")

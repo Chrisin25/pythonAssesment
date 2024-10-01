@@ -9,5 +9,4 @@ class UserRepository:
         self.collection.insert_one(data)
 
     def get_user(self,email):
-        #print(self.collection.find(email))
         return self.collection.find_one(email)
