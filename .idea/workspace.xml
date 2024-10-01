@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3916bcc-89f2-4df3-af57-5dffac86d2d9" name="Changes" comment="model modified">
+    <list default="true" id="e3916bcc-89f2-4df3-af57-5dffac86d2d9" name="Changes" comment="get modified">
+      <change afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/handlers/error_handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repositories/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/user_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/user_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/user_resource.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/user_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/user_data.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +48,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.user_service.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.app.executor": "Run",
+    "Python.user_service.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\285166\PycharmProjects\pythonAssesment\data" />
@@ -129,6 +130,15 @@
       <option name="presentableId" value="Default" />
       <updated>1727413440034</updated>
     </task>
+    <task id="LOCAL-00001" summary="get modified">
+      <option name="closed" value="true" />
+      <created>1727758818175</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727758818175</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +164,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="get modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="get modified" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -164,13 +178,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/services/user_service.py</url>
-          <line>11</line>
+          <line>10</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/services/user_service.py</url>
-          <line>24</line>
+          <line>21</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/resources/user_resource.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/resources/user_resource.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,5 @@
 import json
-
-from falcon import HTTPBadRequest
+import falcon
 
 from models.User import User
 from repositories.user_repository import UserRepository
@@ -12,10 +11,8 @@ class UserService:
 
     def add_new_user(self,new_data):
         user = User.from_dict(new_data)
-        emaildata=new_data.get("email")
-
         if self.repository.get_user({"email":new_data.get("email")}):
-           raise HTTPBadRequest(description="User with this mail id already exist")
+           raise falcon.HTTPBadRequest(description="User with this mail id already exist")
 
         with open("data/user_data.json","r") as json_file:
             data=json.load(json_file)
@@ -31,7 +28,10 @@ class UserService:
         user_dict={}
         user =self.repository.get_user(email)
         #print(user)
-        user_dict["name"]=user.get("name")
-        user_dict["email"]=user.get("email")
-        user_dict["age"] = user.get("age")
+        if user:
+            user_dict["name"]=user.get("name")
+            user_dict["email"]=user.get("email")
+            user_dict["age"] = user.get("age")
+        else:
+            raise falcon.HTTPNotFound(description="No user found with this email")
         return user_dict
