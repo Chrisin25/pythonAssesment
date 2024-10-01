@@ -8,6 +8,6 @@ class UserRepository:
     def add_new_user(self,data):
         self.collection.insert_one(data)
 
-    def view_user(self,email):
-        print(self.collection.find(email))
-        return self.collection.find(email)
+    def get_user(self,email):
+        #print(self.collection.find(email))
+        return self.collection.find_one(email)

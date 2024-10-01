@@ -31,7 +31,7 @@ class UserResource:
 
         email = req.media
 
-        response = self.service.view_user_by_email(email)
+        response = self.service.get_user_by_email(email)
 
         if not response:
             raise HTTPNotFound(description="No user found with this email")
