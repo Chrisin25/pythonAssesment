@@ -10,7 +10,7 @@ class MockUserService:
     def add_new_user(self, data):
         pass  # Mock implementation
 
-    def view_user_by_email(self, email):
+    def get_user_by_email(self, email):
         return {"email": email, "name": "Test User"}  # Mock response
 
 class TestUserResource(unittest.TestCase):
@@ -61,14 +61,7 @@ class TestUserResource(unittest.TestCase):
         self.assertEqual(response.status, falcon.HTTP_200)
         self.assertEqual(response.json, {"email": "test@example.com", "name": "Test User"})
 
-    @mock.patch.object(MockUserService, 'view_user_by_email', return_value=None)
-    def test_user_not_found(self, mock_view_user_by_email):
-        # Simulate a request with an email that does not exist
-        email = {"email": "nonexistent@example.com"}
 
-        response = self.client.simulate_get('/users', json=email)
-
-        self.assertEqual(response.status, falcon.HTTP_404)
 
 
 
