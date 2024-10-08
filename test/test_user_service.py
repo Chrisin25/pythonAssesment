@@ -1,7 +1,6 @@
 import unittest
 from unittest.mock import patch,MagicMock
 from falcon import HTTPBadRequest,HTTPNotFound
-from falcon.bench.create import falcon
 
 from services.user_service import UserService
 from repositories.user_repository import UserRepository
@@ -15,7 +14,6 @@ class TestUserService(unittest.TestCase):
 
     def test_add_new_user_success(self):
         self.mock_repo.get_user.return_value = None
-
         new_data = {"email": "test@example.com", "name": "Test User","age":20}
 
         with patch('builtins.open', unittest.mock.mock_open(read_data='[]')) as mock_file:
@@ -46,5 +44,3 @@ class TestUserService(unittest.TestCase):
             self.user_service.get_user_by_email("test@example.com")
         self.assertEqual(str(context.exception.description), "No user found with this email")
 
-if __name__ == '__main__':
-    unittest.main()

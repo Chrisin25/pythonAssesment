@@ -7,6 +7,8 @@
     <list default="true" id="e3916bcc-89f2-4df3-af57-5dffac86d2d9" name="Changes" comment="exceptions modified">
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/user_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/user_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/user_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_user_resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_resources.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_service.py" afterDir="false" />
     </list>
@@ -49,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for test_user_resources.TestUserResource.executor": "Run",
+    "Python tests.Python tests for test_user_resources.TestUserResource.test_on_get_success.executor": "Run",
     "Python tests.Python tests for test_user_service.TestUserService.executor": "Run",
     "Python tests.Python tests for test_user_service.TestUserService.test_add_new_user_success.executor": "Run",
     "Python tests.Python tests for test_user_service.TestUserService.test_get_user_by_email_not_found.executor": "Run",
@@ -64,7 +67,7 @@
       <recent name="C:\Users\285166\PycharmProjects\pythonAssesment\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_user_service.TestUserService.test_get_user_by_email_not_found">
+  <component name="RunManager" selected="Python tests.Python tests for test_user_service.TestUserService">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonAssesment" />
       <option name="ENV_FILES" value="" />
@@ -102,6 +105,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_user_resources.TestUserResource.test_on_get_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonAssesment" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_user_resources.TestUserResource.test_on_get_success&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_user_service.TestUserService" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAssesment" />
       <option name="ENV_FILES" value="" />
@@ -114,21 +132,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_user_service.TestUserService&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_user_service.TestUserService.test_add_new_user_success" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonAssesment" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_user_service.TestUserService.test_add_new_user_success&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -149,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_user_service.TestUserService.test_get_user_by_email_not_found" />
         <item itemvalue="Python tests.Python tests for test_user_service.TestUserService" />
-        <item itemvalue="Python tests.Python tests for test_user_service.TestUserService.test_add_new_user_success" />
         <item itemvalue="Python tests.Python tests for test_user_resources.TestUserResource" />
+        <item itemvalue="Python tests.Python tests for test_user_resources.TestUserResource.test_on_get_success" />
         <item itemvalue="Python.app" />
+        <item itemvalue="Python tests.Python tests for test_user_service.TestUserService.test_get_user_by_email_not_found" />
       </list>
     </recent_temporary>
   </component>
@@ -235,17 +238,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/services/user_service.py</url>
-          <line>21</line>
+          <line>22</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/resources/user_resource.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/resources/user_resource.py</url>
-          <line>34</line>
+          <line>45</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
