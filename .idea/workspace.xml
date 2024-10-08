@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3916bcc-89f2-4df3-af57-5dffac86d2d9" name="Changes" comment="exceptions modified">
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+    <list default="true" id="e3916bcc-89f2-4df3-af57-5dffac86d2d9" name="Changes" comment="tests modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/user_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/user_resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/user_service.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_user_resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_resources.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_user_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_user_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +35,9 @@
     &quot;accountId&quot;: &quot;7d382ef2-71a2-4417-9eee-dc908b92d713&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -67,7 +66,7 @@
       <recent name="C:\Users\285166\PycharmProjects\pythonAssesment\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_user_service.TestUserService">
+  <component name="RunManager" selected="Python tests.Python tests for test_user_resources.TestUserResource">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonAssesment" />
       <option name="ENV_FILES" value="" />
@@ -152,8 +151,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_user_service.TestUserService" />
         <item itemvalue="Python tests.Python tests for test_user_resources.TestUserResource" />
+        <item itemvalue="Python tests.Python tests for test_user_service.TestUserService" />
         <item itemvalue="Python tests.Python tests for test_user_resources.TestUserResource.test_on_get_success" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python tests.Python tests for test_user_service.TestUserService.test_get_user_by_email_not_found" />
@@ -192,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727764001537</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tests modified">
+      <option name="closed" value="true" />
+      <created>1728377352881</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728377352881</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,7 +228,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="get modified" />
     <MESSAGE value="exceptions modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="exceptions modified" />
+    <MESSAGE value="tests modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests modified" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

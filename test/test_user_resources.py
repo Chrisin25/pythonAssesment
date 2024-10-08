@@ -1,5 +1,4 @@
 import unittest
-from unittest.mock import patch, MagicMock
 from falcon import testing
 import falcon
 from resources.user_resource import UserResource
