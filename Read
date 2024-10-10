@@ -1,6 +1,17 @@
+Python microservice that allows users to create and retrieve user information.
+The service will store data in a local MongoDB database and expose REST APIs using the Falcon framework.
+User data is written to a JSON file, and basic test cases are written using Unittest.
+
 starting server:
 waitress-serve --port=8080 User_app.app:app
 
-view coverage(unittest):
+endpoints:
+POST: http://localhost:8080/users
+GET: http://localhost:8080/users/{email}
+
+JSON file:
+pythonAssesment/User_app/data/user_data.json
+
+test and coverage(unittest):
 coverage run -m unittest discover
 coverage html
