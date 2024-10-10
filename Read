@@ -1,0 +1,6 @@
+starting server:
+waitress-serve --port=8080 User_app.app:app
+
+view coverage(unittest):
+coverage run -m unittest discover
+coverage html

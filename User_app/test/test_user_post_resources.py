@@ -1,20 +1,18 @@
 import unittest
 from falcon import testing
 import falcon
-from resources.user_resource import UserResource
+from User_app.resources.user_post_resource import UserPostResource
 
-class MockUserService:
+
+class MockUserAddService:
     def add_new_user(self, data):
         pass  # Mock implementation
-
-    def get_user_by_email(self, email):
-        return {"email": email.get("email"), "name": "Test User"}
 
 class TestUserResource(unittest.TestCase):
     def setUp(self):
         self.app = falcon.App()
-        self.user_resource = UserResource()
-        self.user_resource.service = MockUserService()
+        self.user_resource = UserPostResource()
+        self.user_resource.service = MockUserAddService()
         self.app.add_route('/users', self.user_resource)
         self.app.add_route('/users/{email}', self.user_resource)
         self.client = testing.TestClient(self.app)
@@ -53,16 +51,4 @@ class TestUserResource(unittest.TestCase):
         response = self.client.simulate_post('/users', json=new_user)
         self.assertEqual(response.status, falcon.HTTP_400)
         self.assertEqual(response.json, {'description': 'Enter a valid age', 'title': '400 Bad Request'})
-
-    def test_on_get_success(self):
-        email = "test@example.com"
-        response = self.client.simulate_get(f'/users/{email}')
-        self.assertEqual(response.status, falcon.HTTP_200)
-        self.assertEqual(response.json, {"email": "test@example.com", "name": "Test User"})
-
-    def test_on_get_empty_email(self):
-        email = ""
-        response = self.client.simulate_get(f'/users/{email}')
-        self.assertEqual(response.status, falcon.HTTP_400)
-        self.assertEqual(response.json,{'title': '400 Bad Request', 'description': 'specify a valid email address'})
 

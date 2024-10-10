@@ -1,4 +1,4 @@
-from config import client
+from User_app.config import client
 
 class UserRepository:
     def __init__(self):
