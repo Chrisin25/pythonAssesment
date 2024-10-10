@@ -11,8 +11,9 @@ class UserGetService:
     def get_user_by_email(self,email):
 
         user =self.repository.get_user(email)
-        user.pop("_id")
+
         if user:
+            user.pop("_id")
             return user
         else:
             raise falcon.HTTPNotFound(description="No user found with this email")

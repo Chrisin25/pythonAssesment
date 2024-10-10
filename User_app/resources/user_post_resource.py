@@ -15,27 +15,21 @@ class UserPostResource:
     def on_post(self,req,res):
 
         new_data = req.media
-        #req is empty
-        if req.content_type not in ('application/json', 'application/xml'):
-            raise HTTPUnsupportedMediaType(
-                title='415 Unsupported Media Type',
-                description="specify details of new user"
-            )
-        else:
-            #validate req data
-            if new_data.get("name")== "" or not new_data.get("name"):
-                raise falcon.HTTPBadRequest(description="Enter a valid name")
-            if not new_data.get("email"):
-                raise falcon.HTTPBadRequest(description="Enter a valid email")
-            if not re.match(r"[^@]+@[^@]+\.[^@]+", new_data.get("email")):
-                raise falcon.HTTPBadRequest(description='Invalid email format')
-            if not new_data.get("age") or not new_data.get("age")>0:
-                raise falcon.HTTPBadRequest(description="Enter a valid age")
 
-            self.service.add_new_user(new_data)
+        #validate req data
+        if new_data.get("name")== "" or not new_data.get("name"):
+            raise falcon.HTTPBadRequest(description="Enter a valid name")
+        if not new_data.get("email"):
+            raise falcon.HTTPBadRequest(description="Enter a valid email")
+        if not re.match(r"[^@]+@[^@]+\.[^@]+", new_data.get("email")):
+            raise falcon.HTTPBadRequest(description='Invalid email format')
+        if not new_data.get("age") or not new_data.get("age")>0:
+            raise falcon.HTTPBadRequest(description="Enter a valid age")
 
-            res.status = falcon.HTTP_200
-            res.text = json.dumps({"message": "successfully created"})
+        self.service.add_new_user(new_data)
+
+        res.status = falcon.HTTP_200
+        res.text = json.dumps({"message": "successfully created"})
 
 
 

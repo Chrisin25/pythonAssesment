@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3916bcc-89f2-4df3-af57-5dffac86d2d9" name="Changes" comment="corrections">
-      <change beforePath="$PROJECT_DIR$/Read" beforeDir="false" afterPath="$PROJECT_DIR$/Read" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_app/resources/user_post_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/resources/user_post_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_app/services/user_get_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/services/user_get_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_app/test/test_user_get_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/test/test_user_get_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_app/test/test_user_post_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/test/test_user_post_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +53,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests for test_user_get_resource.TestUserResource.executor": "Run",
+    "Python tests.Python tests for test_user_get_service.TestGetUserService.executor": "Run",
+    "Python tests.Python tests for test_user_post_resources.TestUserResource.executor": "Run",
+    "Python tests.Python tests for test_user_post_service.TestAddUserService.executor": "Run",
     "Python tests.Python tests for test_user_resources.TestUserResource.executor": "Run",
     "Python tests.Python tests for test_user_resources.TestUserResource.test_on_get_success.executor": "Run",
     "Python tests.Python tests for test_user_service.TestUserService.executor": "Run",
@@ -66,7 +75,7 @@
       <recent name="C:\Users\285166\PycharmProjects\pythonAssesment\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python tests.Python tests for test_user_post_resources.TestUserResource">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonAssesment" />
       <option name="ENV_FILES" value="" />
@@ -104,36 +113,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for User_app.test.test_user_post_resources.TestUserResource" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonAssesment" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_app/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;User_app.test.test_user_post_resources.TestUserResource&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for User_app.test.test_user_post_service" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonAssesment" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_app/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;User_app.test.test_user_post_service&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test.test_user_post_service" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonAssesment" />
       <option name="ENV_FILES" value="" />
@@ -146,6 +125,66 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test.test_user_post_service&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_user_get_resource.TestUserResource" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonAssesment" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_app/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_user_get_resource.TestUserResource&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_user_get_service.TestGetUserService" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonAssesment" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_app/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_user_get_service.TestGetUserService&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_user_post_resources.TestUserResource" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonAssesment" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_app/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_user_post_resources.TestUserResource&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_user_post_service.TestAddUserService" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonAssesment" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/User_app/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_user_post_service.TestAddUserService&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -166,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_user_post_resources.TestUserResource" />
+        <item itemvalue="Python tests.Python tests for test_user_get_service.TestGetUserService" />
+        <item itemvalue="Python tests.Python tests for test_user_post_service.TestAddUserService" />
+        <item itemvalue="Python tests.Python tests for test_user_get_resource.TestUserResource" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python tests.Python tests for User_app.test.test_user_post_resources.TestUserResource" />
-        <item itemvalue="Python tests.Python tests for test.test_user_post_service" />
-        <item itemvalue="Python tests.Python tests for User_app.test.test_user_post_resources.TestUserResource" />
-        <item itemvalue="Python tests.Python tests for User_app.test.test_user_post_service" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728538533180</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="corrections">
+      <option name="closed" value="true" />
+      <created>1728539296696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728539296696</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

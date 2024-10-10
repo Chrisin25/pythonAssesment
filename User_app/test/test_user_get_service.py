@@ -1,5 +1,7 @@
 import unittest
 from unittest.mock import MagicMock
+
+from bson import ObjectId
 from falcon import HTTPNotFound
 from User_app.repositories.user_repository import UserRepository
 from User_app.services.user_get_service import UserGetService
@@ -14,7 +16,7 @@ class TestGetUserService(unittest.TestCase):
 
 
     def test_get_user_by_email(self):
-        self.mock_repo.get_user.return_value = {"name": "Test User","email":"test@example.com","age":22}
+        self.mock_repo.get_user.return_value = {"_id":ObjectId(),"name": "Test User","email":"test@example.com","age":22}
 
         result = self.user_service.get_user_by_email("test@example.com")
 
