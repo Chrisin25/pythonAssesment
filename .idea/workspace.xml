@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3916bcc-89f2-4df3-af57-5dffac86d2d9" name="Changes" comment="es db connected">
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+    <list default="true" id="e3916bcc-89f2-4df3-af57-5dffac86d2d9" name="Changes" comment="mongorepo modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User_app/data/user_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/data/user_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User_app/repositories/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/repositories/user_repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User_app/resources/user_get_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/resources/user_get_resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_app/resources/user_post_resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/resources/user_post_resource.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User_app/services/user_get_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/services/user_get_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User_app/services/user_post_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/User_app/services/user_post_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729079697307</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="mongorepo modified">
+      <option name="closed" value="true" />
+      <created>1729085827132</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729085827132</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -282,7 +292,8 @@
     <MESSAGE value="tests modified" />
     <MESSAGE value="corrections" />
     <MESSAGE value="es db connected" />
-    <option name="LAST_COMMIT_MESSAGE" value="es db connected" />
+    <MESSAGE value="mongorepo modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="mongorepo modified" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

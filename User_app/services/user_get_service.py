@@ -9,9 +9,9 @@ class UserGetService:
             self.repository = UserRepository()
 
     def get_user_by_email(self,email):
-
+        print("entered service")
         user =self.repository.get_user(email)
-
+        print("user:",user)
         if user:
             return user
         else:

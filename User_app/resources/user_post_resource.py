@@ -24,9 +24,9 @@ class UserPostResource:
             raise falcon.HTTPBadRequest(description='Invalid email format')
         if not new_data.get("age") or not new_data.get("age")>0:
             raise falcon.HTTPBadRequest(description="Enter a valid age")
-
+        print("data validation complete")
         self.service.add_new_user(new_data)
-
+        print("new user added")
         res.status = falcon.HTTP_200
         res.text = json.dumps({"message": "successfully created"})
 
