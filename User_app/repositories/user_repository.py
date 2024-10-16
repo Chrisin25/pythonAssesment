@@ -9,8 +9,11 @@ class UserRepository:
         self.collection.insert_one(data)
 
     def get_user(self,email):
-        return self.collection.find_one({"email":new_data.get("email")}).pop("_id")'''
-
+        user=self.collection.find_one({"email":email})
+        if user:
+            user.pop('_id')
+            return user
+'''
     def __init__(self):
         if not (client.indices.exists(index="user")):
             client.indices.create(index="user")
