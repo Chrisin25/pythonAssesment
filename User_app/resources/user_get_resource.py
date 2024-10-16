@@ -13,7 +13,7 @@ class UserGetResource:
         if email=="":
             raise falcon.HTTPBadRequest(description="specify a valid email address")
         else:
-           response = self.service.get_user_by_email({"email":email})
+           response = self.service.get_user_by_email(email)
 
            resp.status = falcon.HTTP_200
            resp.text = json.dumps(response)

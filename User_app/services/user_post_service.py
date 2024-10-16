@@ -15,8 +15,8 @@ class UserAddService:
         user.__dict__.update(new_data)
 
         #validate mail id is unique
-        if self.repository.get_user({"email":new_data.get("email")}):
-           raise falcon.HTTPBadRequest(description="User with this mail id already exist")
+        if self.repository.get_user(new_data.get("email")):
+            raise falcon.HTTPBadRequest(description="User with this mail id already exist")
 
         # add to json file
         with open("User_app/data/user_data.json","r") as json_file:

@@ -2,7 +2,6 @@ import json
 import re
 
 import falcon
-from falcon import HTTPUnsupportedMediaType
 
 from User_app.services.user_post_service import UserAddService
 

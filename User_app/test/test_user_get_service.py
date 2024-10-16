@@ -16,7 +16,7 @@ class TestGetUserService(unittest.TestCase):
 
 
     def test_get_user_by_email(self):
-        self.mock_repo.get_user.return_value = {"_id":ObjectId(),"name": "Test User","email":"test@example.com","age":22}
+        self.mock_repo.get_user.return_value = {'age': 22, 'email': 'test@example.com', 'name': 'Test User'}
 
         result = self.user_service.get_user_by_email("test@example.com")
 
